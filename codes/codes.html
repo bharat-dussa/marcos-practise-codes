@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS Viewer</title>
+    <link rel="stylesheet" href="code.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="editor">
+        <h1>Gallery Hover code</h1>
+        <h2>HTML</h2>
+        <textarea
+          id="html-code"
+          placeholder="Write HTML here..."
+          rows="80"
+          cols="40"
+        >
+
+                <div className=" gallery mt-80 flex justify-center h-screen">
+                    <div className="item flex flex-wrap gap-4">
+                      {" "}
+                      <img
+                        src="https://img.freepik.com/free-photo/beautiful-anime-character-cartoon-scene_23-2151035157.jpg"
+                        alt="anime"
+                      />
+                       <img
+                        src="https://images1.wionews.com/images/wion/900x1600/2023/6/30/1688105171209_desktopwallpaperkakashihatakeforandroid900x1440.jpg"
+                        alt="anime"
+                      />
+                      <img
+                        src="https://static.tnn.in/photo/105900167/105900167.jpg"
+                        alt="anime"
+                      />
+                      <img
+                        src="https://images1.dnaindia.com/images/DNA-EN/900x1600/2024/2/16/1708066916901_ntgfvc89ff.jpg"
+                        alt="anime"
+                      />
+                      <img
+                        src="https://img.freepik.com/free-photo/beautiful-anime-character-cartoon-scene_23-2151035157.jpg"
+                        alt="anime"
+                      />
+                     
+                      <img
+                        src="https://i.pinimg.com/736x/75/18/9b/75189ba315788f3930fb0b97d5be3881.jpg"
+                        alt="anime"
+                      />
+                      <img
+                        src="https://www.themarysue.com/wp-content/uploads/2023/03/Tanjiro-Demon-Slayer.jpg"
+                        alt="anime"
+                      />
+                      <img
+                        src="https://img.freepik.com/free-photo/beautiful-anime-character-cartoon-scene_23-2151035157.jpg"
+                        alt="anime"
+                      />
+                    </div>
+                  </div>
+
+            </textarea
+        >
+      </div>
+      <div class="editor">
+        <h2>CSS</h2>
+        <textarea
+          id="css-code"
+          placeholder="Write CSS here..."
+          rows="80"
+          cols="40"
+        >
+            .item img {
+                width: 180px;
+                height: 400px;
+                border-radius: 4px;
+              }
+              
+              .item {
+                position: absolute;
+                transform-style: preserve-3d;
+                transform: perspective(1000px);
+              }
+              
+              .item img {
+                transition: 0.5s;
+                filter: brightness(0.001);
+              }
+              
+              .item img:hover {
+                filter: brightness(1);
+                transform: translateZ(180px);
+              }
+              
+              .item img:hover + * {
+                filter: brightness(0.4);
+                transform: translateZ(140px) rotateY(40deg);
+              }
+              
+              .item img:hover + * + * {
+                  filter: brightness(0.2);
+                  transform: translateZ(10px) rotateY(20deg);
+                }
+              
+              
+                .item img:has(+ *:hover){
+                  filter: brightness(0.3);
+                  transform: translateZ(10px) rotateY(-20deg);
+                }
+        </textarea>
+      </div>
+      <div class="output">
+        <h2>Output</h2>
+        <!-- <iframe id="output-frame"></iframe> -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="editor">
+        <h1>Gallery Hover code</h1>
+        <h2>Position relative</h2>
+        <textarea
+          id="html-code"
+          placeholder="Write HTML here..."
+          rows="80"
+          cols="40"
+        >
+  
+            <!DOCTYPE html>
+            <html lang="en">
+              <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Sticky</title>
+                
+              </head>
+            
+              <style>
+                body {
+                  box-sizing: border-box;
+                  padding: 0;
+                  margin: 0;
+                }
+                .navbar {
+                  position: sticky;
+                  top: 0;
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 0 10px 0 10px;
+                  background-color: #111;
+                  color: white;
+                }
+            
+                .links {
+                  display: flex;
+                  gap: 10px;
+                  font-size: 10px;
+                  align-items: center;
+                  /* border: 2px solid red; */
+                }
+            
+                .container {
+                  height: 100vh;
+                }
+            
+                .h-screen {
+                  height: 100vh;
+                }
+            
+                .fixed-box {
+                  position: fixed;
+                  background-color: red;
+                  padding: 20px;
+                  bottom: 0;
+                }
+              </style>
+            
+              <body>
+                <div class="container">
+                  <div class="navbar">
+                    <div>
+                      <p>Marcos</p>
+                    </div>
+            
+                    <div class="links">
+                      <p>Home</p>
+                      <p>About us</p>
+                      <p>Content</p>
+                      <p>Contact us</p>
+                    </div>
+                  </div>
+            
+                  <div class="h-screen">
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 10px;
+                        align-items: center;
+                        padding: 20px;
+                      "
+                    >
+                      <div>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                          alt="js"
+                          width="120px"
+                          style="border-radius: 24px"
+                        />
+                      </div>
+                      <div>
+                        <p
+                          style="
+                            font-size: 13px;
+                            letter-spacing: 0.45px;
+                            text-align: justify;
+                          "
+                        >
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+                          accusantium molestiae nisi quam nam iure vel assumenda sint,
+                          voluptatem illo, explicabo in recusandae dolorum excepturi labore
+                          voluptatum atque ullam numquam!
+                        </p>
+                      </div>
+                    </div>
+            
+                    <hr />
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 10px;
+                        align-items: center;
+                        padding: 20px;
+                        flex-direction: row-reverse;
+                      "
+                    >
+                      <div>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                          alt="js"
+                          width="120px"
+                          style="border-radius: 24px"
+                        />
+                      </div>
+                      <div>
+                        <p
+                          style="
+                            font-size: 13px;
+                            letter-spacing: 0.45px;
+                            text-align: justify;
+                          "
+                        >
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+                          accusantium molestiae nisi quam nam iure vel assumenda sint,
+                          voluptatem illo, explicabo in recusandae dolorum excepturi labore
+                          voluptatum atque ullam numquam!
+                        </p>
+                      </div>
+                    </div>
+            
+                    <div
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 10px;
+                        align-items: center;
+                        padding: 20px;
+                      "
+                    >
+                      <div>
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                          alt="js"
+                          width="120px"
+                          style="border-radius: 24px"
+                        />
+                      </div>
+                      <div>
+                        <p
+                          style="
+                            font-size: 13px;
+                            letter-spacing: 0.45px;
+                            text-align: justify;
+                          "
+                        >
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+                          accusantium molestiae nisi quam nam iure vel assumenda sint,
+                          voluptatem illo, explicabo in recusandae dolorum excepturi labore
+                          voluptatum atque ullam numquam!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="fixed-box"></div>
+                </div>
+              </body>
+            </html>
+            
+  
+              </textarea
+        >
+      </div>
+      <div class="editor">
+        <h2>CSS</h2>
+        <textarea
+          id="css-code"
+          placeholder="Write CSS here..."
+          rows="80"
+          cols="40"
+        >
+        </textarea>
+      </div>
+      <div class="output">
+        <h2>Output</h2>
+        <!-- <iframe id="output-frame"></iframe> -->
+      </div>
+    </div>
+    <script src="code.js"></script>
+  </body>
+</html>

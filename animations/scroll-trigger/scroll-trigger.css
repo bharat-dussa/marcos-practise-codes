@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page1 {
+  height: 100vh;
+  background-color: lightblue;
+}
+.page2 {
+  height: 100vh;
+  background-color: #ef8f;
+}
+
+.page3 {
+  height: 100vh;
+  background-color: #ef8fd;
+}
+
+.box {
+  width: 20vw;
+  height: 20vw;
+  background-color: red;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky</title>
+    
+  </head>
+
+  <style>
+    body {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px 0 10px;
+      background-color: #111;
+      color: white;
+    }
+
+    .links {
+      display: flex;
+      gap: 10px;
+      font-size: 10px;
+      align-items: center;
+      /* border: 2px solid red; */
+    }
+
+    .container {
+      height: 100vh;
+    }
+
+    .h-screen {
+      height: 100vh;
+    }
+
+    .fixed-box {
+      position: fixed;
+      background-color: red;
+      padding: 20px;
+      bottom: 0;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div>
+          <p>Marcos</p>
+        </div>
+
+        <div class="links">
+          <p>Home</p>
+          <p>About us</p>
+          <p>Content</p>
+          <p>Contact us</p>
+        </div>
+      </div>
+
+      <div class="h-screen">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+            padding: 20px;
+          "
+        >
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="js"
+              width="120px"
+              style="border-radius: 24px"
+            />
+          </div>
+          <div>
+            <p
+              style="
+                font-size: 13px;
+                letter-spacing: 0.45px;
+                text-align: justify;
+              "
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+              accusantium molestiae nisi quam nam iure vel assumenda sint,
+              voluptatem illo, explicabo in recusandae dolorum excepturi labore
+              voluptatum atque ullam numquam!
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+            padding: 20px;
+            flex-direction: row-reverse;
+          "
+        >
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="js"
+              width="120px"
+              style="border-radius: 24px"
+            />
+          </div>
+          <div>
+            <p
+              style="
+                font-size: 13px;
+                letter-spacing: 0.45px;
+                text-align: justify;
+              "
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+              accusantium molestiae nisi quam nam iure vel assumenda sint,
+              voluptatem illo, explicabo in recusandae dolorum excepturi labore
+              voluptatum atque ullam numquam!
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+            padding: 20px;
+          "
+        >
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="js"
+              width="120px"
+              style="border-radius: 24px"
+            />
+          </div>
+          <div>
+            <p
+              style="
+                font-size: 13px;
+                letter-spacing: 0.45px;
+                text-align: justify;
+              "
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+              accusantium molestiae nisi quam nam iure vel assumenda sint,
+              voluptatem illo, explicabo in recusandae dolorum excepturi labore
+              voluptatum atque ullam numquam!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fixed-box"></div>
+    </div>
+  </body>
+</html>

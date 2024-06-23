@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+#cursor {
+  width: 0vw;
+  height: 0vw;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  position: absolute;
+}
